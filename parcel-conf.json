@@ -37,7 +37,7 @@
     "msa": true
   },
   "brazos": {
-    "active": false,
+    "active": true,
     "fips": "48041",
     "shp": {
       "url": "brazos-Web_Parcel_Boundary.zip",
@@ -73,7 +73,7 @@
     "msa": true
   },
   "colorado": {
-    "active": false,
+    "active": true,
     "fips": "48089",
     "_note": "received via FTP upload from Whitney Saadi whitneys@coloradocad.org on 9/29",
     "shp": {
@@ -131,7 +131,7 @@
     "msa": true
   },
   "grimes": {
-    "active": "false",
+    "active": true,
     "fips": "48185",
     "shp": {
       "url": "Grimes_Shapefiles.zip",
@@ -149,7 +149,7 @@
       ],
       "py_args": "Land%20525914.csv"
     },
-    "msa": "false"
+    "msa": false
   },
   "harris": {
     "active": true,
@@ -195,7 +195,7 @@
     "msa": true
   },
   "matagorda": {
-    "active": false,
+    "active": true,
     "fips": "48321",
     "shp": {
       "url": "matagorda-2020GIS.zip",
@@ -231,7 +231,7 @@
     "msa": true
   },
   "sanjacinto": {
-    "active": false,
+    "active": true,
     "fips": "48407",
     "shp": {
       "url": "sanjacinto-SJCAD_SHP_FILES_AS_OF_09-08-2020.zip",
@@ -254,7 +254,7 @@
   "walker": {
     "_note": "Received via Dropbox from Jennifer Berry on 9/22/2020",
     "fips": "48471",
-    "active": false,
+    "active": true,
     "shp": {
       "url": "walker-GIS_Data.zip",
       "zip": [
@@ -296,7 +296,7 @@
     "msa": true
   },
   "washington": {
-    "active": false,
+    "active": true,
     "fips": "48477",
     "shp": {
       "url": "washington_-_GIS_Mapping_Data.zip",
@@ -318,7 +318,7 @@
     "msa": false
   },
   "wharton": {
-    "active": false,
+    "active": true,
     "fips": "48481",
     "shp": {
       "_note": "received 10/6/2020",
