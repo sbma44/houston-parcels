@@ -1,3 +1,5 @@
+<figure><img src="https://github.com/sbma44/houston-parcels/blob/main/img/parcels2.png?raw=true" alt=parcels color-coded by the number of institution isochrones that reach them"></figure>
+
 # Houston Parcel Analysis
 
 ## What is this?
@@ -18,7 +20,7 @@ The software is not the main attraction here, but a few parts may be of interest
 
 *Isochrone generation.* Isochrones are polygons that show how far a person can travel from a starting point in a given amount of time, for a given transit mode.
 
-<figure>![isochrone map](img/isochrones.png)<figcaption align="center">30m transit isochrones originating from higher ed institutions in Houston</figcaption></figure>
+<figure><img src="https://github.com/sbma44/houston-parcels/blob/main/img/isochrones.png?raw=true alt="30m transit isochrones originating from higher ed institutions in Houston"></figure>
 
 I evaluated several different services capable of generating isochrones for this project; code to access their APIs and automate the creation of these isochrones is provided. So are the isochrones corresponding to all educational institutions in the Houston area. I employed a local instance of OpenTripPlanner to generate the transit isochrones, but the work to get OTP configured to do this is not captured in this repo.
 
@@ -28,7 +30,7 @@ I evaluated several different services capable of generating isochrones for this
 
 Once the lead investigator introduced me to this project's central question, a problem presented itself. I could generate isochrones for them, and isochrones can be quite detailed. But we were interested in _accessibility_--knowing how isochrones intersected with _where people live_. And the available data on where people live is lousy! Census geometry can be quite coarse. An isochrone might touch the western edge of a Census polygon that has a head count attached to it, but that polygon might include a huge lake or farm or industrial park along its western side.
 
-<figure>![residences and parcels](img/residences_vs_parcels.png)<figcaption align="center">residences plotted as dots overlaid on a map of parcels</figcaption></figure>
+<figure><img src="https://github.com/sbma44/houston-parcels/blob/main/img/residences_vs_parcels.png" alt="residences plotted as dots overlaid on a map of parcels"></figure>
 
 What are we to do in this situation? Count all of that polygon's people as being reachable by the isochrone? Multiply the head count by the overlapping area where the isochrone touches the lake? No! That's dumb!
 
@@ -40,11 +42,9 @@ Joining these two files up isn't always easy--it took lots of guessing and stari
 
 In the end, we had data for Austin, Brazoria, Brazos, Chambers, Colorado, Fort Bend, Galveston, Grimes, Harris, Liberty, Matagorda, Montgomery, San Jacinto, Walker, Waller, Washington, and Wharton counties. Run these scripts and you will get a per-parcel classification of all the land in them. I then filtered the parcels to those with residential land use codes (which codes to employ varies by county, though again, there is overlap), and assigned Census demographic data from each containing polygon to parcels on a pro rata basis.
 
-<figure>![](img/parcels.png)<figcaption align="center">incomplete map of collected county parcel data</figcaption></figure>
+<figure><img src="https://github.com/sbma44/houston-parcels/blob/main/img/parcels.png" alt="incomplete map of collected county parcel data"></figure>
 
 This allowed for a granular analysis of where isochrones cover the places that people live. I think it's pretty good! Certainly it lights up `htop` in a satisfying way for many hours. You could probably also use this approach to granularly map industrial or agricultural land use in the greater Houston area.
-
-<figure>![](img/parcels2.png)<figcaption align="center">parcels color-coded by the number of institution isochrones that reach them</figcaption></figure>
 
 A more complete or at least fancier explanation of the above is available in [METHODOLOGY.md](METHODOLOGY.md), the sadly-unused description I wrote when it seemed like we were getting close to publication.
 
@@ -53,6 +53,7 @@ A more complete or at least fancier explanation of the above is available in [ME
 The data is stored in an S3 bucket that these scripts are configured to reach. Please grab the files _once_ and then use your own local copy rather than racking up charges on my AWS account. It's about 2.3 GB of compressed data.
 
 ## Prerequisites
+This project relies upon numerous GNU tools, but few unusual ones. `jq` and the `gdal-bin` packages are the only dependencies you're likely to need to install. `pv` is optional.
 
 You're going to need a beefy machine with a PostGIS install. And you're probably going to need some bash and python chops. Once you have those, head to `conf.sh`.
 
