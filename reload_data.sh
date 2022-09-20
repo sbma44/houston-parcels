@@ -30,7 +30,7 @@ function do_parcels() {
     else
         download "$(_jq ".${COUNTY}.bldg.url")" &
     fi
-    ogr2ogr -dim XY -t_srs EPSG:4326 -lco precision=NO -makevalid -overwrite -nln parcels_${COUNTY} -nlt PROMOTE_TO_MULTI -f PostgreSQL PG:"dbname='$DB_NAME' host='$PG_HOST' port='5432' user='postgres' password='$PGPASSWORD'" "${TMP}/${COUNTY}/$(_jq ".${COUNTY}.shp.shp")"
+    ogr2ogr -dim XY -t_srs EPSG:4326 -lco precision=NO -overwrite -nln parcels_${COUNTY} -nlt PROMOTE_TO_MULTI -f PostgreSQL PG:"dbname='$DB_NAME' host='$PG_HOST' port='5432' user='postgres' password='$PGPASSWORD'" "${TMP}/${COUNTY}/$(_jq ".${COUNTY}.shp.shp")"
     echo "ALTER TABLE parcels_${COUNTY} ADD COLUMN IF NOT EXISTS tax_id TEXT;" | $PSQL
     PADDING="$(_jq ".${COUNTY}.shp.id_pad")"
     if [ "${PADDING}" = "null" ]; then PADDING=20; fi
@@ -91,7 +91,7 @@ echo "- loaded institutions"
 # --- BEGIN COUNTIES
 download 'Texas_County_Boundaries_Detailed-shp.zip'
 (cd "${TMP}" && unzip -j -q -o "${TMP}/Texas_County_Boundaries_Detailed-shp.zip")
-ogr2ogr -t_srs EPSG:4326 -lco precision=NO -overwrite -nln tx_counties -f PostgreSQL PG:"dbname='$DB_NAME' host='$PG_HOST' port='5432' user='postgres' password='$PGPASSWORD'" "$TMP/County.shp"
+ogr2ogr -t_srs EPSG:4326 -lco precision=NO -overwrite -nln tx_counties -nlt PROMOTE_TO_MULTI -f PostgreSQL PG:"dbname='$DB_NAME' host='$PG_HOST' port='5432' user='postgres' password='$PGPASSWORD'" "$TMP/County.shp"
 # --- END COUNTIES
 
 # --- BEGIN CENSUS
