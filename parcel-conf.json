@@ -1,0 +1,342 @@
+{
+  "austin": {
+    "active": true,
+    "fips": "48015",
+    "_note": "sent by Barbie Lunsford blunsford@austincad.org on 10/1/2020",
+    "shp": {
+      "url": "austin-Austin_CAD_gis_data.zip",
+      "zip": [
+        "../austin-Austin_CAD_gis_data.zip"
+      ],
+      "shp": "Parcels.shp",
+      "id_field": "prop_id::text",
+      "id_pad": 13
+    },
+    "bldg": {
+      "url": "austin-2020_Austin_CAD_Certified_Appraisal_Roll_-_real_personal.zip",
+      "zip": [
+        "../austin-2020_Austin_CAD_Certified_Appraisal_Roll_-_real_personal.zip"
+      ],
+      "py_args": "2020%20Austin%20CAD%20Certified%20Appraisal%20Roll%20-%20Real-Personal%20%20-%20Excel%20-%2020200722_222943ReList_Landscape.csv"
+    },
+    "msa": true
+  },
+  "brazoria": {
+    "active": true,
+    "fips": "48039",
+    "shp": {
+      "url": "brazoria-PARCELS_W_OWNER.zip",
+      "shp": "PARCELS_W_OWNER.shp",
+      "zip": [
+        "../brazoria-PARCELS_W_OWNER.zip"
+      ],
+      "id_field": "simple_geo",
+      "use_code_field": "state_cd",
+      "id_pad": 13
+    },
+    "msa": true
+  },
+  "brazos": {
+    "active": false,
+    "fips": "48041",
+    "shp": {
+      "url": "brazos-Web_Parcel_Boundary.zip",
+      "zip": [
+        "../brazos-Web_Parcel_Boundary.zip"
+      ],
+      "shp": "Web_Parcel_Boundary.shp",
+      "id_field": "geo_id",
+      "id_pad": 15,
+      "use_code_field": "state_cd"
+    },
+    "msa": false
+  },
+  "chambers": {
+    "active": true,
+    "fips": "48071",
+    "shp": {
+      "url": "Chambers_Tax_Parcels_May_2020.zip",
+      "zip": [
+        "../Chambers_Tax_Parcels_May_2020.zip"
+      ],
+      "shp": "Chambers_Tax_Parcels_May_2020.shp",
+      "id_field": "Name",
+      "id_pad": 13
+    },
+    "bldg": {
+      "url": "chambers-2018_appraisal_roll.zip",
+      "zip": [
+        "../chambers-2018_appraisal_roll.zip"
+      ],
+      "py_args": "2018%20CHAMBERS%20CAD%20Certified%20Appraisal%20Roll%20-%20Excel%20-%2020180717_132423.csv"
+    },
+    "msa": true
+  },
+  "colorado": {
+    "active": false,
+    "fips": "48089",
+    "_note": "received via FTP upload from Whitney Saadi whitneys@coloradocad.org on 9/29",
+    "shp": {
+      "url": "colorado-GIS_DATA.zip",
+      "zip": [
+        "../colorado-GIS_DATA.zip"
+      ],
+      "shp": "Parcels.shp",
+      "id_field": "PROP_ID::text",
+      "id_pad": 13
+    },
+    "bldg": {
+      "url": "colorado-2020_CERTIFIED_TAX_ROLL.zip",
+      "zip": [
+        "../colorado-2020_CERTIFIED_TAX_ROLL.zip 2020-09-23_000281_APPRAISAL_LAND_DETAIL.TXT"
+      ],
+      "py_args": "2020-09-23_000281_APPRAISAL_LAND_DETAIL.TXT"
+    },
+    "msa": false
+  },
+  "ftbend": {
+    "active": true,
+    "fips": "48157",
+    "shp": {
+      "url": "ftbend_2019_GIS_Certified_Data_Parcel_and_Shapefiles_GIS.zip",
+      "shp": "CAMASUMMARY.shp",
+      "zip": [
+        "../ftbend_2019_GIS_Certified_Data_Parcel_and_Shapefiles_GIS.zip"
+      ],
+      "id_field": "PROPNUMBER",
+      "use_code_field": "LMainSegSP",
+      "id_pad": 16
+    },
+    "msa": true
+  },
+  "galveston": {
+    "active": true,
+    "fips": "48167",
+    "shp": {
+      "url": "galveston-parcels.zip",
+      "shp": "parcels.shp",
+      "zip": [
+        "../galveston-parcels.zip"
+      ],
+      "id_field": "GEOID",
+      "id_pad": 15
+    },
+    "bldg": {
+      "url": "Galveston_2019_Certified_Roll.zip",
+      "zip": [
+        "../Galveston_2019_Certified_Roll.zip 2019-07-23_000927_APPRAISAL_INFO.TXT"
+      ],
+      "py_args": "2019-07-23_000927_APPRAISAL_INFO.TXT"
+    },
+    "msa": true
+  },
+  "grimes": {
+    "active": "false",
+    "fips": "48185",
+    "shp": {
+      "url": "Grimes_Shapefiles.zip",
+      "zip": [
+        "../Grimes_Shapefiles.zip"
+      ],
+      "shp": "PARCELS.shp",
+      "id_field": "QuickRef",
+      "id_pad": 13
+    },
+    "bldg": {
+      "url": "Grimes_CAD_Complete_Appraisal_Roll.zip",
+      "zip": [
+        "../Grimes_CAD_Complete_Appraisal_Roll.zip"
+      ],
+      "py_args": "Land%20525914.csv"
+    },
+    "msa": "false"
+  },
+  "harris": {
+    "active": true,
+    "fips": "48201",
+    "shp": {
+      "url": "harris-Parcels.zip",
+      "zip": [
+        "../harris-Parcels.zip"
+      ],
+      "shp": "Parcels.shp",
+      "id_field": "HCAD_NUM",
+      "id_pad": 13
+    },
+    "bldg": {
+      "url": "harris-20200911-Real_building_land.zip",
+      "zip": [
+        "../harris-20200911-Real_building_land.zip building_other.txt building_res.txt"
+      ],
+      "py_args": "building_other.txt building_res.txt"
+    },
+    "msa": true
+  },
+  "liberty": {
+    "active": true,
+    "_note": "retrieved from ftp.libertycad.com on 9/23/2020 (certified roll on 9/24/2020) per email from Karl Keller <kkeller@libertycad.com>",
+    "fips": "48291",
+    "shp": {
+      "url": "liberty-parcels.zip",
+      "zip": [
+        "../liberty-parcels.zip"
+      ],
+      "shp": "PARCELS_JOIN.shp",
+      "id_field": "PROP_ID::text",
+      "id_pad": 13
+    },
+    "bldg": {
+      "url": "liberty-2020_Certified_Roll.zip",
+      "zip": [
+        "../liberty-2020_Certified_Roll.zip Certified_Roll/2020-08-18_001349_APPRAISAL_LAND_DETAIL.TXT"
+      ],
+      "py_args": "2020-08-18_001349_APPRAISAL_LAND_DETAIL.TXT"
+    },
+    "msa": true
+  },
+  "matagorda": {
+    "active": false,
+    "fips": "48321",
+    "shp": {
+      "url": "matagorda-2020GIS.zip",
+      "zip": [
+        "../matagorda-2020GIS.zip"
+      ],
+      "shp": "Parcels.shp",
+      "id_field": "PROP_ID::text",
+      "id_pad": 13
+    },
+    "bldg": {
+      "url": "matagorda-2020_CERTIFIED_ROLL.zip",
+      "zip": [
+        "../matagorda-2020_CERTIFIED_ROLL.zip"
+      ],
+      "py_args": "2020%20CERITIFIED%20ROLL.txt"
+    },
+    "msa": false
+  },
+  "montgomery": {
+    "active": true,
+    "fips": "48339",
+    "shp": {
+      "url": "montgomery-Tax_Parcel_View-shp.zip",
+      "shp": "Tax_Parcel_View.shp",
+      "zip": [
+        "../montgomery-Tax_Parcel_View-shp.zip"
+      ],
+      "id_field": "PropertyNu",
+      "use_code_field": "fStateCode",
+      "id_pad": 13
+    },
+    "msa": true
+  },
+  "sanjacinto": {
+    "active": false,
+    "fips": "48407",
+    "shp": {
+      "url": "sanjacinto-SJCAD_SHP_FILES_AS_OF_09-08-2020.zip",
+      "zip": [
+        "../sanjacinto-SJCAD_SHP_FILES_AS_OF_09-08-2020.zip"
+      ],
+      "shp": "Parcels.shp",
+      "id_field": "PROP_ID::text",
+      "id_pad": 13
+    },
+    "bldg": {
+      "url": "sanjacinto-2020_SJCAD_Certified_Roll.zip",
+      "zip": [
+        "../sanjacinto-2020_SJCAD_Certified_Roll.zip 2020-09-18_002938_APPRAISAL_LAND_DETAIL.TXT"
+      ],
+      "py_args": "2020-09-18_002938_APPRAISAL_LAND_DETAIL.TXT"
+    },
+    "msa": false
+  },
+  "walker": {
+    "_note": "Received via Dropbox from Jennifer Berry on 9/22/2020",
+    "fips": "48471",
+    "active": false,
+    "shp": {
+      "url": "walker-GIS_Data.zip",
+      "zip": [
+        "../walker-GIS_Data.zip"
+      ],
+      "shp": "Parcels.shp",
+      "id_field": "PROP_ID::text",
+      "id_pad": 13
+    },
+    "bldg": {
+      "url": "walker-Appraisal_Roll.zip",
+      "zip": [
+        "../walker-Appraisal_Roll.zip Appraisal_Roll/2020-09-18_000634_APPRAISAL_LAND_DETAIL.TXT"
+      ],
+      "py_args": "2020-09-18_000634_APPRAISAL_LAND_DETAIL.TXT"
+    },
+    "msa": false
+  },
+  "waller": {
+    "active": true,
+    "fips": "48473",
+    "_note": "received via FTP from Jena Qualls JenaQ@waller-cad.org on 10/1/2020",
+    "shp": {
+      "url": "waller-SHAPEFILES_10012020.zip",
+      "zip": [
+        "../waller-SHAPEFILES_10012020.zip"
+      ],
+      "shp": "Parcels.shp",
+      "id_field": "PROP_ID::text",
+      "id_pad": 13
+    },
+    "bldg": {
+      "url": "WALLER_CAD_2020_CERT_FILES_AS_OF_SUP_2_10012020_FOR_VENDOR.zip",
+      "zip": [
+        "../WALLER_CAD_2020_CERT_FILES_AS_OF_SUP_2_10012020_FOR_VENDOR.zip"
+      ],
+      "py_args": "2020-10-01_004036_APPRAISAL_LAND_DETAIL.TXT"
+    },
+    "msa": true
+  },
+  "washington": {
+    "active": false,
+    "fips": "48477",
+    "shp": {
+      "url": "washington_-_GIS_Mapping_Data.zip",
+      "shp": "Parcels.shp",
+      "zip": [
+        "../washington_-_GIS_Mapping_Data.zip"
+      ],
+      "id_field": "PROP_ID::text",
+      "id_pad": 13
+    },
+    "bldg": {
+      "url": "washington_-_2020_Property_Data_Export.zip",
+      "zip": [
+        "../washington_-_2020_Property_Data_Export.zip Land.zip",
+        "Land.zip"
+      ],
+      "py_args": "PropertyDataExport407610.txt"
+    },
+    "msa": false
+  },
+  "wharton": {
+    "active": false,
+    "fips": "48481",
+    "shp": {
+      "_note": "received 10/6/2020",
+      "url": "wharton-GIS.zip",
+      "zip": [
+        "../wharton-GIS.zip"
+      ],
+      "shp": "Parcels.shp",
+      "id_field": "PROP_ID::text",
+      "id_pad": 13
+    },
+    "bldg": {
+      "url": "wharton-2020_Certified_Appraisal_Roll_9-17-2020.zip",
+      "zip": [
+        "../wharton-2020_Certified_Appraisal_Roll_9-17-2020.zip"
+      ],
+      "py_args": "2020%20Certified%20Appraisal%20Roll%209-17-2020.csv"
+    },
+    "msa": false
+  }
+}

@@ -1,0 +1,8 @@
+institution_count	povertylevel_50percent	povertylevel_125percent	povertylevel_150percent	povertylevel_185percent	povertylevel_200percent	povertylevel_300percent	povertylevel_400percent	povertylevel_500percent	povertylevel_over500percent	pct_totpop
+0	0.059	0.133	0.049	0.068	0.027	0.160	0.128	0.096	0.279	1.000
+1	0.058	0.109	0.045	0.057	0.025	0.150	0.114	0.095	0.347	1.000
+2	0.071	0.130	0.030	0.039	0.017	0.109	0.085	0.084	0.436	1.000
+3	0.079	0.088	0.024	0.044	0.022	0.116	0.110	0.084	0.433	1.000
+4	0.076	0.081	0.017	0.045	0.018	0.077	0.114	0.096	0.475	1.000
+5	0.091	0.098	0.032	0.045	0.023	0.081	0.119	0.093	0.418	1.000
+6	0.104	0.080	0.027	0.044	0.015	0.071	0.079	0.119	0.462	1.000
