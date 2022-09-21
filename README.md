@@ -53,17 +53,29 @@ A more complete or at least fancier explanation of the above is available in [ME
 The data is stored in an S3 bucket that these scripts are configured to reach. Please grab the files _once_ and then use your own local copy rather than racking up charges on my AWS account. It's about 2.3 GB of compressed data.
 
 ## Prerequisites
-This project relies upon numerous GNU tools, but few unusual ones. `jq` and the `gdal-bin` packages are the only dependencies you're likely to need to install. `pv` is optional.
+This project relies upon numerous POSIX and GNU tools as well as python3, but few unusual ones--generally speaking, it's stuff that's equally available in a default `OS X` or `Ubuntu` environment. `jq` and the `gdal-bin` packages are the only dependencies you're likely to need to install. `pv` is optional.
 
-You're going to need a beefy machine with a PostGIS install. And you're probably going to need some bash and python chops. Once you have those, head to `conf.sh`.
+You're going to need a beefy PostGIS instance. To adapt the scripts to your needs, you're probably going to need some bash and python chops. Once you have those, head to `conf.sh`.
 
-I had this thing purring like a kitten, with repeatable results that were scrutinized for plausibility by professional social scientists.
+These scripts generate repeatable results that were scrutinized for plausibility by professional social scientists. I have since scrubbed the project to avoid implying any endorsement by the sponsoring organization. The system has been tested for operability since, but its output has not been scrutinized.
 
-I have since scrubbed the project to avoid implying any endorsement by the sponsoring organization. This required various potentially bug-introducing operations (e.g. moving data to a differently-named S3 bucket). I have not tested it thoroughly since.
+## Usage
+
+To initialize the database:
+
+> ./initdb.sh
+
+To run the script:
+
+> ./do_it_all.sh
+
+The latter script is just a call to `ISOCHRONES=1 RETAIN=1 PARCELS=1 ANALYSIS=1 ./reload_data.sh` (which subsequently invokes `analysis.sh`). Set any one of those variables to 0 to skip the phase it represents (useful if you're working on one part of the code).
+
+Running this will take hours and generate a very large number of TSV files that analyze a problem that you probably don't care about! Setting `ANALYSIS=0` will avoid some of the expensive computation of Census statistics and instead just leave you with the processed parcel layer.
 
 ## Getting in touch
 
-I would be glad to answer your questions! thomas.j.lee (at) gmail (dot) com.
+I will be glad to answer your questions. thomas.j.lee (at) gmail (dot) com.
 
 ## License
 
