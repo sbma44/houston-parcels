@@ -26,4 +26,4 @@ Limitations:
 - Some neighboring counties offer limited transit services that may expand the reach of METRO Houston accessibility. Without GTFS data, we cannot account for them.
 - Our analysis creates isochrones from single geographic points for each campus, which for some large campuses may not account for cross-campus  travel that consumes a meaningful portion of the 30 minute travel window.
 
-Source code and isochrones are available at https://github.com/sbma44/houston-gis
+Source code and isochrones are available at https://github.com/sbma44/houston-parcels
